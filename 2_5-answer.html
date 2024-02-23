@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文</title>
+  <link rel="stylesheet" type="text/css" href="2_5-answer.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  $(function(){
+    $("#button").on("click",function(){
+        var value = $("#value").val();
+        if(value == "1"){
+            $("#box").css("background-color","#f00");
+        } else if(value == "2"){
+            $("#box").css("background-color","#0f0");
+        } else if(value == "3"){
+            $("#box").css("background-color","#00f");
+        } else {
+            $("#box").css("background-color","#aaa");
+        }
+    });
+  });
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+  </div><!-- button -->
+</body>
+</html>
